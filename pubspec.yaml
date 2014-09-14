@@ -1,5 +1,6 @@
-name: throttle-debounce
+name: throttle_debounce
 version: 0.1.0
 homepage: https://github.com/shivanshuag/dart-throttle-debounce
 description: Dart port of jquery-throttle-debounce
 author: Shivanshu Agrawal <shivanshuag@gmail.com>
+homepage: https://github.com/shivanshuag/dart-throttle-debounce
