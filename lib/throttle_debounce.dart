@@ -8,7 +8,7 @@
 
 
 
-library throttleDebounce;
+library throttle_debounce;
 
 import 'dart:async';
 

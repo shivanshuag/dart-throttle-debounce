@@ -1,4 +1,4 @@
-import 'package:throttleDebounce/throttleDebounce.dart';
+import 'package:throttle_debounce/throttle_debounce.dart';
 import 'dart:html' as html;
 
 

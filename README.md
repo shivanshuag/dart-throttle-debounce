@@ -3,7 +3,7 @@ A library for throttling or debouncing frequently occuring events. This package 
 
 ## Example
 ```dart
-import 'package:throttleDebounce/throttleDebounce.dart'
+import 'package:throttle_debounce/throttle_debounce.dart'
 import 'dart:html' ad html
 main() {
     html.Element input = html.querySelector('#inputBox');
