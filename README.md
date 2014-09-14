@@ -3,8 +3,8 @@ A library for throttling or debouncing frequently occuring events. This package 
 
 ## Example
 ```dart
-import 'package:throttle_debounce/throttle_debounce.dart'
-import 'dart:html' ad html
+import 'package:throttle_debounce/throttle_debounce.dart';
+import 'dart:html' as html;
 main() {
     html.Element input = html.querySelector('#inputBox');
     List args = ['argument1', 'argument2'];
@@ -30,13 +30,13 @@ element.on('someevent').listen((e) {
     throttler.throttle();
 });
 ```
-** delay - ** (const Duration) A dart constant of type Duration which.
+**delay -** (const Duration) A dart constant of type Duration which.
 
-** callback - ** (Function) A function which is executed after delay milliseconds.
+**callback -** (Function) A function which is executed after delay milliseconds.
 
-** args - ** (List) argument passed to the callback. (Dart does not support variable number of arguments to a function, so we have to pass the arguments in a list)
+**args -** (List) argument passed to the callback. (Dart does not support variable number of arguments to a function, so we have to pass the arguments in a list)
 
-** noTrailing - ** (bool) Optional, defaults to false. If noTrailing is true, callback will be called after delay only when the throttle function is being called. If set to false, there will also be one trailing call to the callback after delay after the throttle function has stopped executing.
+**noTrailing -** (bool) Optional, defaults to false. If noTrailing is true, callback will be called after delay only when the throttle function is being called. If set to false, there will also be one trailing call to the callback after delay after the throttle function has stopped executing.
 
 
 ## Debouncing
@@ -50,13 +50,13 @@ element.on('someevent').listen((e) {
     debouncer.debounce();
 });
 ```
-** delay - ** (const Duration) A dart constant of type Duration which.
+**delay -** (const Duration) A dart constant of type Duration which.
 
-** callback - ** (Function) A function which is executed after delay milliseconds.
+**callback -** (Function) A function which is executed after delay milliseconds.
 
-** args - ** (List) argument passed to the callback. (Dart does not support variable number of arguments to a function, so we have to pass the arguments in a list)
+**args -** (List) argument passed to the callback. (Dart does not support variable number of arguments to a function, so we have to pass the arguments in a list)
 
-** atBegin - ** (bool) Optional, defaults to false. If atBegins is true, the callback will be executed at the beginning of the debounced call. If there is a pause of delay duration, callback will again be called when the debounced call starts again. If atBegins is false, callback will be executed whenever there is a pause of delay duration between the debounce calls i.e. at the end.
+**atBegin -** (bool) Optional, defaults to false. If atBegins is true, the callback will be executed at the beginning of the debounced call. If there is a pause of delay duration, callback will again be called when the debounced call starts again. If atBegins is false, callback will be executed whenever there is a pause of delay duration between the debounce calls i.e. at the end.
 
 
 ## Licenses
