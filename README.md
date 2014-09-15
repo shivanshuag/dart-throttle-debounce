@@ -26,7 +26,7 @@ Execute a frequently called function only once in a fixed interval. See http://b
 ### Usage and Arguments
 ```dart
 var throttler = new Throttler(Duration delay, callback, List args, [bool noTrailing]);
-element.on('someevent').listen((e) {
+element.onKeyUp.listen((e) {
     throttler.throttle();
 });
 ```
@@ -46,7 +46,7 @@ Debounces the execution of a function. This ensures that the function is execute
 
 ```dart
 var debouncer = new Debouncer(Duration delay, callback, List args, [bool atBegin]);
-element.on('someevent').listen((e) {
+element.onKeyUp.listen((e) {
     debouncer.debounce();
 });
 ```
